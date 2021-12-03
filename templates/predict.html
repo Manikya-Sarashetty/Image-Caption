@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <img src="{{url_for('static', filename='file.jpg')}}" alt="image" height=340px>
+
+        <h2 class='text-white'>
+            {{data}}
+        </h2>
+
+        <script type="text/javascript"> 
+            var a = "{{data}}";
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = a;
+            window.speechSynthesis.speak(msg);
+         </script>
+        
+    </body>
+    
+
+
+</html>
